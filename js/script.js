@@ -1,9 +1,10 @@
-let edad = parseInt(prompt("Ingrese su edad"));
+let pesos = parseFloat(prompt("Cuantos pesos para comprar figuritas tenes?"));
 
-if (edad % 4 == 0){
-    alert(`Vivio exactamente ${edad/4} mundiales`)
-}else{
-    alert(`VIvio ${Math.floor(edad/4)} Mundiales`);
-
+if (pesos <= 20){
+    alert("Te puedo ofrecer 2 caramelos");
+}else if( pesos >= 21 && pesos <= 49){
+    alert("Estas cerca pero no puedo fiarte, vuelve mañana");
 }
-
+else{
+    alert("Aqui tienes tus figuritas del mundial")
+}
